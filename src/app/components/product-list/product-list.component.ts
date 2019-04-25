@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {IProduct } from './product.model';
 @Component({
   selector: 'app-product-list',
   templateUrl: './product-list.component.html',
@@ -15,7 +15,7 @@ show() {
   this.image=!this.image;
  
 }
-products:any[]=[
+products:IProduct[]=[
   
     {
       "productId": 1,

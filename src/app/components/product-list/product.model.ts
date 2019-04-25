@@ -1,4 +1,4 @@
-export class iproduct{
+export class IProduct{
     constructor(
         public productId:number,
         public productName:string,

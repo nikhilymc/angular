@@ -1,7 +1,7 @@
 <div class="card">
   <div class="card-header">
     <h1>{{title}}</h1>
-    product list
+ 
   </div>
 <div class="card-body">
   <div class="table-responsive">
@@ -26,7 +26,7 @@
  <td><img  *ngIf='image' src="{{product.imageUrl}} " ></td>
           <td>{{product.productName|uppercase}}</td>
           <td>{{product.productCode}}</td>
-          <td>{{product.releaseDate}}|date</td>
+          <td>{{product.releaseDate}}</td>
           <td>{{product.price|currency:'INR' }}</td>
           <td>{{product.starRating}}</td>
           
