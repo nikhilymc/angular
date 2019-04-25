@@ -52,7 +52,8 @@ products:any[]=[
       "productName": "Saw",
       "productCode": "TBX-0022",
       "releaseDate": "May 15, 2016",
-      "description": "15-inch steel blade hand saw",     
+      "description": "15-inch steel blade hand saw",   
+      "price": 8.9,
       "starRating": 3.7,
       "imageUrl": "assets/images/d.jpg"
     },
