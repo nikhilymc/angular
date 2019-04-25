@@ -1,0 +1,40 @@
+<div class="card">
+  <div class="card-header">
+    <h1>{{title}}</h1>
+    product list
+  </div>
+<div class="card-body">
+  <div class="table-responsive">
+    <table class="table" *ngIf='products && products.length'>
+      <thead>
+        <tr>
+        <th>
+          <button class="btn btn-primary" (click)='show()'> {{image?'hide':'show'}} image</button>
+        </th>
+       
+        <th>product</th>
+        <th>code</th>
+        <th>available</th>
+        <th>price</th>
+        <th>5 star rating</th>
+      </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor='let product of products'>
+          
+    <!--   <td><img [src]="product.imageUrl" [title]='product.productName' [style.width.px]='imageWidth' [style.margin.px]='imageMargin'></td>-->
+ <td><img  *ngIf='image' src="{{product.imageUrl}} " ></td>
+          <td>{{product.productName|uppercase}}</td>
+          <td>{{product.productCode}}</td>
+          <td>{{product.releaseDate}}|date</td>
+          <td>{{product.price|currency:'INR' }}</td>
+          <td>{{product.starRating}}</td>
+          
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</div>
+<p id="demo"></p>
+
